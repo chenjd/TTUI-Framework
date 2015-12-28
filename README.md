@@ -14,30 +14,30 @@
 	│	│   ├── Constant              // 常量&辅助类  
 	│	│   │   ├── TTUIFrameID.cs   //UI的ID在这里定义
 	│	│   │   └── TTUIHelper.cs   //辅助类
-	│  |   ├── Factory
+	│ |   ├── Factory
 	│	|   |   ├── TTUIFactory.cs	//抽象类，用于批量注册UI信息
 	│	│   |   └── TTUIBuilder.cs	//注册UI信息的具体执行者
-	│  |   ├── Manager				//管理器模块
+	│ |   ├── Manager				//管理器模块
 	│	|   |   ├── TTUIFrameManager.cs	//UI页面管理模块
 	│	│   |   └── TTUIMsgManager.cs	//UI消息管理模块
-	│  |   ├── Message				//定义UI的Message
+	│ |   ├── Message				//定义UI的Message
 	│	│   |   └── TTUIMessage.cs	//所有UI消息的基类，自定义的UI消息需要继承该类
-	│  |   ├── UI					//定义UI的页面
+	│ |   ├── UI					//定义UI的页面
 	│	│   |   └── TTUIFrame.cs	//所有UI类型的基类，定义了最基本的一些功能
-	│  |   └── TTUICore.cs			//提供了对UI各个控制模块的引用，操作入口
-	│  └──Test                  //测试脚本
-	│      ├── Frame       //UI页面类，继承自TTUIFrame
-	|      |   └── TTUITestFrame.cs
-	│      ├── Item         //MonoBehaviour脚本，用来接受用户的点击
-	|      |   ├── TTUITestItem.cs	//创建消息，并发送到消息管理器
-	|      |   └── TTUITestItem1.cs
-	│      ├── MonoScript         //捆绑在测试UI资源上的MonoBehav脚本
-	|      |   └── TTUITestScript.cs 
-	│      ├── Msg         //测试UI消息，继承自TTUIMessage
-	|      |   └──  TTUITestMsg.cs    
-	│      └── TTUITestFactory.cs	//继承自TTUIFactory，用来注册测试的UI信息
-	|	   |
-	|      └── TTUITestMain.cs    //测试入口 
+	│ |   └── TTUICore.cs			//提供了对UI各个控制模块的引用，操作入口
+	│ └──Test                  //测试脚本
+	│     ├── Frame       //UI页面类，继承自TTUIFrame
+	|     |   └── TTUITestFrame.cs
+	│     ├── Item         //MonoBehaviour脚本，用来接受用户的点击
+	|     |   ├── TTUITestItem.cs	//创建消息，并发送到消息管理器
+	|     |   └── TTUITestItem1.cs
+	│     ├── MonoScript         //捆绑在测试UI资源上的MonoBehav脚本
+	|     |   └── TTUITestScript.cs 
+	│     ├── Msg         //测试UI消息，继承自TTUIMessage
+	|     |   └──  TTUITestMsg.cs    
+	│     └── TTUITestFactory.cs	//继承自TTUIFactory，用来注册测试的UI信息
+	|	  |
+	|     └── TTUITestMain.cs    //测试入口 
 	|   
 	│       
 	└── TTUITestScene.unity				//测试场景
